@@ -3,23 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arcade Ball Destroyer Privacy Policy</title>
+  <title>Space-Arcade-Retro-Shooter — Privacy Policy</title>
+  <style>
+    :root {
+      --bg-color: #f4f6fb;
+      --surface-color: #ffffff;
+      --surface-subtle: #f8fafc;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --accent-cyan: #0284c7;
+      --accent-magenta: #c026d3;
+      --accent-hover: #0369a1;
+      --border-color: #e2e8f0;
+      --badge-bg: #e0f2fe;
+      --badge-text: #0369a1;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #090714;
+        --surface-color: #121024;
+        --surface-subtle: #181530;
+        --text-primary: #f8fafc;
+        --text-secondary: #a5b4fc;
+        --accent-cyan: #38bdf8;
+        --accent-magenta: #e879f9;
+        --accent-hover: #7dd3fc;
+        --border-color: #262247;
+        --badge-bg: rgba(56, 189, 248, 0.12);
+        --badge-text: #38bdf8;
+        --shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2.5rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: var(--surface-color);
+      padding: 2.75rem 3.25rem;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+    }
+
+    .brand-header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .brand-logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+      background-color: #090714;
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .app-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--badge-text);
+      background-color: var(--badge-bg);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    .dev-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    h1 {
+      font-size: 1.95rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: var(--text-primary);
+    }
+
+    .effective-date {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-top: 2.35rem;
+      margin-bottom: 0.85rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1.15em;
+      background: linear-gradient(180deg, var(--accent-cyan), var(--accent-magenta));
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 1.1rem;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      margin: 0.75rem 0 1.35rem 1.4rem;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 0.65rem;
+      padding-left: 0.35rem;
+      font-size: 0.975rem;
+    }
+
+    li::marker {
+      color: var(--accent-cyan);
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      border-bottom-color: var(--accent-hover);
+    }
+
+    footer {
+      margin-top: 2.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+
+      main {
+        padding: 1.85rem 1.35rem;
+        border-radius: 12px;
+      }
+
+      .brand-header {
+        align-items: flex-start;
+        gap: 0.95rem;
+      }
+
+      .brand-logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.55rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective date:</strong> 2026-11-15</p>
+    <header class="brand-header">
+      <img src="logo.jpg" alt="Sticky Joystick Arcade logo" class="brand-logo" onerror="this.style.display='none'">
+      <div>
+        <div class="brand-meta">
+          <span class="app-label">Space-Arcade-Retro-Shooter</span>
+          <span class="dev-label">by Sticky Joystick Arcade</span>
+        </div>
+        <h1>Privacy Policy</h1>
+      </div>
+    </header>
+    <p class="effective-date"><strong>Effective date:</strong> 2026-11-15</p>
 
     <h2>Controller and contact</h2>
     <p>
-      Arcade Ball Destroyer is operated by Brici Robert, who is responsible
+      <strong>Space-Arcade-Retro-Shooter</strong> (published on Google Play under the developer
+      display name <strong>Sticky Joystick Arcade</strong>) is operated by
+      <strong>Brici Robert</strong>, who is the data controller responsible
       for the app's own processing of personal data. For privacy requests or
       questions, contact
       <a href="mailto:robert.brici@outlook.com">robert.brici@outlook.com</a>.
       No EU representative is currently designated. If a company or other
-      legal entity will publish the app, update the controller identity before
-      release. Reassess whether an EU representative is required if the
-      operator's establishment or target market changes.
+      legal entity will publish the app in the future, this controller
+      identity will be updated before release.
     </p>
 
     <h2>Data handled by the app</h2>
@@ -35,6 +277,10 @@
       <li>
         Purchase-entitlement flags returned by Google Play Billing. The app
         does not store payment-card details or purchase tokens.
+      </li>
+      <li>
+        The selected gameplay background, along with the locally cached
+        background entitlements returned by Google Play.
       </li>
       <li>
         Your optional rewarded-ad choice and accessibility preferences.
@@ -105,8 +351,8 @@
       identifiers through its own server. Google services may process data
       under Google's own roles, policies, and retention practices, and may
       transfer it internationally. See
-      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>,
-      and <a href="https://www.google.com/policies/technologies/ads/">Google's advertising information</a>.
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>,
+      and <a href="https://www.google.com/policies/technologies/ads/" target="_blank" rel="noopener noreferrer">Google's advertising information</a>.
       The app operator does not run analytics or sell data from an operator-run
       server.
     </p>
@@ -126,9 +372,9 @@
       age or date-of-birth information; instead, all ad requests receive the
       child-directed, age-restricted treatment and G-rated content limit. A
       parent or guardian should review the optional advertising choice and any
-      Google consent form. The publisher must declare the actual target
-      audience and content rating accurately in Google Play Console and follow
-      applicable Families requirements.
+      Google consent form. The publisher declares the actual target audience
+      and content rating in Google Play Console in accordance with applicable
+      Families requirements.
     </p>
 
     <h2>Retention and deletion</h2>
@@ -146,7 +392,8 @@
     <p>
       The in-app deletion action clears the app-managed DataStore, including
       local personal records, lives, ad-completion timestamps, cached
-      entitlement flags, and the app's advertising and accessibility choices.
+      entitlement flags, the selected gameplay background, and the app's
+      advertising and accessibility choices.
       It does not reset UMP's separately stored consent state, cancel purchases,
       or delete information held by Google. Google Play purchase entitlements
       may be fetched again from Google Play when purchases are queried. Google
@@ -184,6 +431,11 @@
       integrations, or applicable disclosures change; the effective date above
       will also be updated.
     </p>
+
+    <footer>
+      <span>Space-Arcade-Retro-Shooter</span>
+      <span>Sticky Joystick Arcade &bull; Operated by Brici Robert</span>
+    </footer>
   </main>
 </body>
 </html>
