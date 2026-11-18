@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Space-Arcade-Retro-Shooter — Privacy Policy</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Space-Arcade-Retro-Shooter — Privacy Policy</title>
+<style>
     :root {
       --bg-color: #f4f6fb;
       --surface-color: #ffffff;
@@ -235,25 +236,45 @@
         font-size: 1.15rem;
       }
     }
-  </style>
+  
+/* WCAG 2.2-oriented accessibility enhancements */
+:root { --accent-cyan:#075985; --accent-hover:#0c4a6e; --badge-text:#075985; }
+@media (prefers-color-scheme:dark) { :root { --text-secondary:#cbd5e1; --accent-cyan:#7dd3fc; --accent-hover:#bae6fd; --badge-text:#7dd3fc; } }
+html { scroll-behavior:auto; } body { padding-top:1.25rem; }
+main { overflow:visible; }
+a { text-decoration:underline; text-underline-offset:.15em; border-bottom:0; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible, select:focus-visible, .skip-link:focus-visible { outline:3px solid var(--accent-magenta); outline-offset:3px; border-radius:3px; }
+.skip-link { position:absolute; left:1rem; top:-8rem; z-index:10; padding:.65rem 1rem; background:var(--surface-color); color:var(--text-primary); border:2px solid var(--accent-cyan); }
+.skip-link:focus { top:.5rem; }
+.page-tools { display:flex; justify-content:flex-end; margin-bottom:1.5rem; }
+.language-control { display:flex; flex-wrap:wrap; align-items:center; gap:.65rem; }
+.language-control label { font-size:.9rem; font-weight:650; color:var(--text-primary); }
+.language-control select { min-height:44px; min-width:148px; max-width:100%; padding:.55rem 2rem .55rem .75rem; border:2px solid var(--text-secondary); border-radius:8px; color:var(--text-primary); background:var(--surface-color); font:inherit; cursor:pointer; }
+.brand-header { flex-wrap:wrap; }
+.brand-header > div { min-width:0; flex:1 1 180px; }
+h1, h2 { overflow-wrap:anywhere; }
+@media(max-width:640px) { .page-tools { margin-bottom:1.2rem; } .language-control { width:100%; justify-content:flex-end; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
+@media(forced-colors:active) { a { color:LinkText; } select { border:2px solid ButtonText; } h2::before, main::before { background:CanvasText; } }
+</style>
 </head>
-<body>
-  <main>
-    <header class="brand-header">
-      <img src="logo.jpg" alt="Sticky Joystick Arcade logo" class="brand-logo" onerror="this.style.display='none'">
-      <div>
-        <div class="brand-meta">
-          <span class="app-label">Space-Arcade-Retro-Shooter</span>
-          <span class="dev-label">by Sticky Joystick Arcade</span>
-        </div>
-        <h1>Privacy Policy</h1>
-      </div>
-    </header>
-    <p class="effective-date"><strong>Effective date:</strong> 2026-11-15</p>
-
-    <h2>Controller and contact</h2>
-    <p>
-      <strong>Space-Arcade-Retro-Shooter</strong> (published on Google Play under the developer
+<body><a class="skip-link" href="#main-content" id="skip-link">Skip to main content</a>
+<main aria-label="Legal information" aria-labelledby="page-title" id="main-content" tabindex="-1"><div class="page-tools"><div class="language-control"><label for="language-select" id="language-label">Page language</label><select aria-labelledby="language-label" autocomplete="off" id="language-select"><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="pt">Português</option><option value="de">Deutsch</option></select></div></div>
+<header class="brand-header">
+<img alt="Sticky Joystick Arcade logo" class="brand-logo" onerror="this.style.display='none'" src="logo.png"/>
+<div>
+<div class="brand-meta">
+<span class="app-label">Space-Arcade-Retro-Shooter</span>
+<span class="dev-label" id="by-label">by Sticky Joystick Arcade</span>
+</div>
+<h1 id="page-title">Privacy Policy</h1>
+</div>
+</header>
+<p class="effective-date" data-translate-index="0"><strong>Effective date:</strong> 2026-11-17</p>
+<h2 data-translate-index="1" id="section-1">Controller and contact</h2>
+<p data-translate-index="2">
+<strong>Space-Arcade-Retro-Shooter</strong> (published on Google Play under the developer
       display name <strong>Sticky Joystick Arcade</strong>) is operated by
       <strong>Brici Robert</strong>, who is the data controller responsible
       for the app's own processing of personal data. For privacy requests or
@@ -263,35 +284,41 @@
       legal entity will publish the app in the future, this controller
       identity will be updated before release.
     </p>
-
-    <h2>Data handled by the app</h2>
-    <p>
+<h2 data-translate-index="3" id="section-3">Data handled by the app</h2>
+<p data-translate-index="4">
       The app does not require an account and has no operator-run server. It
       stores the following information in Android DataStore on your device:
     </p>
-    <ul>
-      <li>
+<ul>
+<li data-translate-index="5">
         Game state, including lives, life-regeneration time, high score, and
         your five best run scores.
       </li>
-      <li>
+<li data-translate-index="6">
         Purchase-entitlement flags returned by Google Play Billing. The app
         does not store payment-card details or purchase tokens.
       </li>
-      <li>
+<li data-translate-index="7">
         The selected gameplay background, along with the locally cached
         background entitlements returned by Google Play.
       </li>
-      <li>
+<li data-translate-index="8">
         Your optional rewarded-ad choice and accessibility preferences.
       </li>
-      <li>
+<li data-translate-index="9">
         Rewarded-ad completion timestamps used to determine eligibility in a
         rolling 60-minute window, plus the temporary-reward expiry and the local
         date on which it was claimed.
       </li>
-    </ul>
-    <p>
+</ul>
+<p data-translate-index="10">
+      Your selected app language is stored separately in app-private shared
+      preferences. It remains when you use Delete local data or clear only the
+      cache. Clear Android app storage/data or uninstall the app to reset it.
+      Like the other shared preferences, it is excluded from Android backup
+      and device transfer.
+    </p>
+<p data-translate-index="11">
       The device clock and time zone are read on the device to calculate
       regeneration and time-limited reward eligibility. The app stores the
       relevant regeneration and ad-completion timestamps and the reward-claim
@@ -301,15 +328,14 @@
       timestamps can remain on the device until it runs again or local data is
       deleted.
     </p>
-    <p>
+<p data-translate-index="12">
       No analytics SDK is enabled and no analytics events are sent. The app
       does not request or store your date of birth or age, contacts, microphone,
       camera, or precise location. Personal run records remain on your device;
       the app has no multiplayer or global leaderboard.
     </p>
-
-    <h2>Purposes and legal bases</h2>
-    <p>
+<h2 data-translate-index="13" id="section-13">Purposes and legal bases</h2>
+<p data-translate-index="14">
       The app uses locally stored game and preference data to provide the
       gameplay and settings you request. Where this information is personal
       data, the operator relies on the steps needed to provide the app service
@@ -320,45 +346,45 @@
       Platform (UMP) flow (GDPR Article 6(1)(a) and applicable ePrivacy rules).
       No analytics processing currently takes place.
     </p>
-
-    <h2>Third-party services and disclosures</h2>
-    <ul>
-      <li>
-        <strong>Google Mobile Ads (AdMob):</strong> used for optional rewarded
+<h2 data-translate-index="15" id="section-15">Third-party services and disclosures</h2>
+<ul>
+<li data-translate-index="16">
+<strong>Google Mobile Ads (AdMob):</strong> used for optional rewarded
         ads. Every ad request is configured for child-directed, age-restricted
-        treatment and a G-rated maximum ad content rating. The app removes the
-        Android advertising-ID and Privacy Sandbox ad-services permissions. The SDK may still process IP
-        address, approximate location inferred from network data, device/app
+        treatment and a Teen (T) maximum ad content rating. The app declares
+        the Android advertising-ID and Privacy Sandbox ad-services permissions
+        used by the Google Mobile Ads SDK; you can reset or delete your
+        advertising ID in Android settings. The SDK may process the advertising
+        ID, IP address, approximate location inferred from network data, device/app
         information, diagnostics, and ad delivery or interaction data under
         Google's policies. Requests are gated by your in-app choice and UMP's
         permission to request ads.
       </li>
-      <li>
-        <strong>Google User Messaging Platform (UMP):</strong> obtains and
+<li data-translate-index="17">
+<strong>Google User Messaging Platform (UMP):</strong> obtains and
         applies advertising consent information and presents consent or privacy
         options. UMP keeps its own consent state separately from the app's
         DataStore.
       </li>
-      <li>
-        <strong>Google Play Billing:</strong> handles product purchases and
+<li data-translate-index="18">
+<strong>Google Play Billing:</strong> handles product purchases and
         purchase queries. The app receives product and ownership status to
         provide the associated game entitlement; Google Play handles payment
         credentials.
       </li>
-    </ul>
-    <p>
+</ul>
+<p data-translate-index="19">
       The app's operator does not receive payment details or advertising
       identifiers through its own server. Google services may process data
       under Google's own roles, policies, and retention practices, and may
       transfer it internationally. See
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>,
-      and <a href="https://www.google.com/policies/technologies/ads/" target="_blank" rel="noopener noreferrer">Google's advertising information</a>.
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>,
+      and <a href="https://www.google.com/policies/technologies/ads/" rel="noopener noreferrer" target="_blank">Google's advertising information</a>.
       The app operator does not run analytics or sell data from an operator-run
       server.
     </p>
-
-    <h2>Choices, withdrawal, and children</h2>
-    <p>
+<h2 data-translate-index="20" id="section-20">Choices, withdrawal, and children</h2>
+<p data-translate-index="21">
       You can decline advertising and continue playing. Turn off
       <strong>Allow rewarded advertising</strong> in Settings to stop the app
       from requesting future rewarded ads. Use <strong>Advertising privacy
@@ -367,18 +393,17 @@
       processed. If you withdraw consent, that does not affect processing that
       took place before withdrawal.
     </p>
-    <p>
-      The game is intended for players aged 7 and older. It does not collect
-      age or date-of-birth information; instead, all ad requests receive the
-      child-directed, age-restricted treatment and G-rated content limit. A
-      parent or guardian should review the optional advertising choice and any
-      Google consent form. The publisher declares the actual target audience
-      and content rating in Google Play Console in accordance with applicable
-      Families requirements.
+<p data-translate-index="22">
+      The game is intended for players aged 13 and older and is not directed
+      at children under 13. It does not collect age or date-of-birth
+      information; all ad requests receive the child-directed, age-restricted
+      treatment and a Teen (T) content limit. Players who are minors should
+      review the optional advertising choice and any Google consent form with
+      a parent or guardian. The publisher declares a 13+ target audience and
+      the content rating in Google Play Console.
     </p>
-
-    <h2>Retention and deletion</h2>
-    <p>
+<h2 data-translate-index="23" id="section-23">Retention and deletion</h2>
+<p data-translate-index="24">
       Game state, scores, accessibility settings, and in-app consent choices
       remain in DataStore in app-private persistent storage, not the cache
       directory. Clearing only the app cache does not delete these records.
@@ -389,7 +414,7 @@
       device-to-device transfer, so they are not restored after app data is
       cleared or the app is reinstalled.
     </p>
-    <p>
+<p data-translate-index="25">
       The in-app deletion action clears the app-managed DataStore, including
       local personal records, lives, ad-completion timestamps, cached
       entitlement flags, the selected gameplay background, and the app's
@@ -404,9 +429,8 @@
       <strong>Clear data</strong> action, or uninstall the app; information
       already held by Google may still remain under Google's retention rules.
     </p>
-
-    <h2>Your data-protection rights</h2>
-    <p>
+<h2 data-translate-index="26" id="section-26">Your data-protection rights</h2>
+<p data-translate-index="27">
       If you are in the EU/EEA, applicable law may give you rights to access,
       correct, erase, restrict, or receive certain personal data, object to
       processing, and withdraw consent. To exercise rights relating to the
@@ -416,26 +440,55 @@
       concerning data held by Google must be directed to Google through its
       privacy and account controls.
     </p>
-    <p>
+<p data-translate-index="28">
       The app operator does not operate a server containing game profiles or
       account records. Local data can be removed using the controls described
       above. The operator cannot erase or change records held independently by
       Google.
     </p>
-
-    <h2>Security and changes</h2>
-    <p>
+<h2 data-translate-index="29" id="section-29">Security and changes</h2>
+<p data-translate-index="30">
       App-managed game data is stored locally using Android DataStore and is
       excluded from Android backup. No method of storage or transmission is
       completely secure. This policy will be updated if data practices,
       integrations, or applicable disclosures change; the effective date above
       will also be updated.
     </p>
-
-    <footer>
-      <span>Space-Arcade-Retro-Shooter</span>
-      <span>Sticky Joystick Arcade &bull; Operated by Brici Robert</span>
-    </footer>
-  </main>
-</body>
+<footer>
+<span>Space-Arcade-Retro-Shooter</span>
+<span id="footer-operator">Sticky Joystick Arcade • Operated by Brici Robert</span>
+</footer>
+</main>
+<script id="translations" type="application/json">{"content": {"en": ["\u003cstrong>Effective date:\u003c/strong> 2026-11-17", "Controller and contact", "\u003cstrong>Space-Arcade-Retro-Shooter\u003c/strong> (published on Google Play under the developer\n      display name \u003cstrong>Sticky Joystick Arcade\u003c/strong>) is operated by\n      \u003cstrong>Brici Robert\u003c/strong>, who is the data controller responsible\n      for the app's own processing of personal data. For privacy requests or\n      questions, contact\n      \u003ca href=\"mailto:robert.brici@outlook.com\">robert.brici@outlook.com\u003c/a>.\n      No EU representative is currently designated. If a company or other\n      legal entity will publish the app in the future, this controller\n      identity will be updated before release.", "Data handled by the app", "The app does not require an account and has no operator-run server. It\n      stores the following information in Android DataStore on your device:", "Game state, including lives, life-regeneration time, high score, and\n        your five best run scores.", "Purchase-entitlement flags returned by Google Play Billing. The app\n        does not store payment-card details or purchase tokens.", "The selected gameplay background, along with the locally cached\n        background entitlements returned by Google Play.", "Your optional rewarded-ad choice and accessibility preferences.", "Rewarded-ad completion timestamps used to determine eligibility in a\n        rolling 60-minute window, plus the temporary-reward expiry and the local\n        date on which it was claimed.", "Your selected app language is stored separately in app-private shared\n      preferences. It remains when you use Delete local data or clear only the\n      cache. Clear Android app storage/data or uninstall the app to reset it.\n      Like the other shared preferences, it is excluded from Android backup\n      and device transfer.", "The device clock and time zone are read on the device to calculate\n      regeneration and time-limited reward eligibility. The app stores the\n      relevant regeneration and ad-completion timestamps and the reward-claim\n      date; it does not send the device's time-zone setting to an operator\n      server. Expired ad-completion timestamps are removed when the app next\n      performs its periodic local cleanup. If the app is not running, expired\n      timestamps can remain on the device until it runs again or local data is\n      deleted.", "No analytics SDK is enabled and no analytics events are sent. The app\n      does not request or store your date of birth or age, contacts, microphone,\n      camera, or precise location. Personal run records remain on your device;\n      the app has no multiplayer or global leaderboard.", "Purposes and legal bases", "The app uses locally stored game and preference data to provide the\n      gameplay and settings you request. Where this information is personal\n      data, the operator relies on the steps needed to provide the app service\n      you request (GDPR Article 6(1)(b)). Optional advertising is only requested\n      when the in-app advertising setting permits it and Google's consent\n      information allows a request. Where consent is the applicable legal\n      basis, it is sought through the in-app choice and Google's User Messaging\n      Platform (UMP) flow (GDPR Article 6(1)(a) and applicable ePrivacy rules).\n      No analytics processing currently takes place.", "Third-party services and disclosures", "\u003cstrong>Google Mobile Ads (AdMob):\u003c/strong> used for optional rewarded\n        ads. Every ad request is configured for child-directed, age-restricted\n        treatment and a Teen (T) maximum ad content rating. The app declares\n        the Android advertising-ID and Privacy Sandbox ad-services permissions\n        used by the Google Mobile Ads SDK; you can reset or delete your\n        advertising ID in Android settings. The SDK may process the advertising\n        ID, IP address, approximate location inferred from network data, device/app\n        information, diagnostics, and ad delivery or interaction data under\n        Google's policies. Requests are gated by your in-app choice and UMP's\n        permission to request ads.", "\u003cstrong>Google User Messaging Platform (UMP):\u003c/strong> obtains and\n        applies advertising consent information and presents consent or privacy\n        options. UMP keeps its own consent state separately from the app's\n        DataStore.", "\u003cstrong>Google Play Billing:\u003c/strong> handles product purchases and\n        purchase queries. The app receives product and ownership status to\n        provide the associated game entitlement; Google Play handles payment\n        credentials.", "The app's operator does not receive payment details or advertising\n      identifiers through its own server. Google services may process data\n      under Google's own roles, policies, and retention practices, and may\n      transfer it internationally. See\n      \u003ca href=\"https://policies.google.com/privacy\" rel=\"noopener noreferrer\" target=\"_blank\">Google's Privacy Policy\u003c/a>,\n      and \u003ca href=\"https://www.google.com/policies/technologies/ads/\" rel=\"noopener noreferrer\" target=\"_blank\">Google's advertising information\u003c/a>.\n      The app operator does not run analytics or sell data from an operator-run\n      server.", "Choices, withdrawal, and children", "You can decline advertising and continue playing. Turn off\n      \u003cstrong>Allow rewarded advertising\u003c/strong> in Settings to stop the app\n      from requesting future rewarded ads. Use \u003cstrong>Advertising privacy\n      options\u003c/strong> in Settings to manage choices handled by UMP and Google.\n      Changing an app setting does not erase information Google already\n      processed. If you withdraw consent, that does not affect processing that\n      took place before withdrawal.", "The game is intended for players aged 13 and older and is not directed\n      at children under 13. It does not collect age or date-of-birth\n      information; all ad requests receive the child-directed, age-restricted\n      treatment and a Teen (T) content limit. Players who are minors should\n      review the optional advertising choice and any Google consent form with\n      a parent or guardian. The publisher declares a 13+ target audience and\n      the content rating in Google Play Console.", "Retention and deletion", "Game state, scores, accessibility settings, and in-app consent choices\n      remain in DataStore in app-private persistent storage, not the cache\n      directory. Clearing only the app cache does not delete these records.\n      They are deleted if you use \u003cstrong>Delete local data\u003c/strong>, clear\n      app storage/data in Android settings, or uninstall the app. These items\n      have no shorter automatic expiry. The app-managed DataStore and\n      shared-preference files are excluded from Android cloud backup and\n      device-to-device transfer, so they are not restored after app data is\n      cleared or the app is reinstalled.", "The in-app deletion action clears the app-managed DataStore, including\n      local personal records, lives, ad-completion timestamps, cached\n      entitlement flags, the selected gameplay background, and the app's\n      advertising and accessibility choices.\n      It does not reset UMP's separately stored consent state, cancel purchases,\n      or delete information held by Google. Google Play purchase entitlements\n      may be fetched again from Google Play when purchases are queried. Google\n      Play purchase history must be managed through Google. Android's\n      \u003cstrong>Clear cache\u003c/strong> action only removes cache files and does\n      not erase the DataStore records described above. To delete app data and\n      app-private SDK data, use Android's \u003cstrong>Clear storage\u003c/strong> or\n      \u003cstrong>Clear data\u003c/strong> action, or uninstall the app; information\n      already held by Google may still remain under Google's retention rules.", "Your data-protection rights", "If you are in the EU/EEA, applicable law may give you rights to access,\n      correct, erase, restrict, or receive certain personal data, object to\n      processing, and withdraw consent. To exercise rights relating to the\n      app operator's processing, contact the operator using the details above.\n      You may also complain to the data-protection authority in your place of\n      residence, work, or the place of an alleged infringement. Requests\n      concerning data held by Google must be directed to Google through its\n      privacy and account controls.", "The app operator does not operate a server containing game profiles or\n      account records. Local data can be removed using the controls described\n      above. The operator cannot erase or change records held independently by\n      Google.", "Security and changes", "App-managed game data is stored locally using Android DataStore and is\n      excluded from Android backup. No method of storage or transmission is\n      completely secure. This policy will be updated if data practices,\n      integrations, or applicable disclosures change; the effective date above\n      will also be updated."], "fr": ["Date d’entrée en vigueur : 17/11/2026", "Responsable du traitement et contact", "Space-Arcade-Retro-Shooter, publié sur Google Play sous le nom de développeur Sticky Joystick Arcade, est exploité par Brici Robert, responsable du traitement des données personnelles effectué par l’application elle-même. Pour toute question ou demande relative à la confidentialité, écrivez à [[email]]. Aucun représentant dans l’UE n’est actuellement désigné. Si une société ou une autre personne morale publie ultérieurement l’application, l’identité du responsable sera mise à jour avant sa sortie.", "Données traitées par l’application", "L’application ne nécessite aucun compte et ne dispose d’aucun serveur exploité par son éditeur. Elle conserve les informations suivantes dans Android DataStore sur votre appareil :", "L’état du jeu, notamment les vies, l’heure de régénération des vies, le meilleur score et les cinq meilleurs scores de vos parties.", "Les indicateurs de droits d’achat renvoyés par Google Play Billing. L’application ne conserve ni données de carte bancaire ni jetons d’achat.", "Le décor de jeu sélectionné et les droits associés aux décors, renvoyés par Google Play et mis en cache localement.", "Votre choix facultatif concernant les publicités récompensées et vos préférences d’accessibilité.", "Les horodatages de fin des publicités récompensées, utilisés pour vérifier l’éligibilité sur une fenêtre glissante de 60 minutes, ainsi que l’expiration des récompenses temporaires et la date locale de leur obtention.", "La langue choisie dans l’application est enregistrée séparément dans des préférences partagées privées. Elle est conservée après « Supprimer les données locales » ou un simple vidage du cache. Pour la réinitialiser, effacez les données de stockage Android de l’application ou désinstallez-la. Comme les autres préférences partagées, elle est exclue des sauvegardes Android et des transferts entre appareils.", "L’horloge et le fuseau horaire de l’appareil sont consultés localement pour calculer la régénération et l’éligibilité aux récompenses limitées dans le temps. L’application conserve les horodatages pertinents de régénération et de fin de publicité ainsi que la date d’obtention de la récompense, sans envoyer le fuseau horaire à un serveur de l’éditeur. Les horodatages publicitaires expirés sont supprimés lors du prochain nettoyage local périodique. Si l’application ne fonctionne pas, ils peuvent rester sur l’appareil jusqu’à sa prochaine exécution ou la suppression des données locales.", "Aucun SDK d’analyse n’est activé et aucun événement d’analyse n’est envoyé. L’application ne demande ni ne conserve votre date de naissance ou votre âge, vos contacts, l’accès au microphone ou à la caméra, ni votre position précise. Vos records restent sur votre appareil ; il n’existe ni mode multijoueur ni classement mondial.", "Finalités et bases juridiques", "L’application utilise les données locales du jeu et les préférences pour fournir le jeu et les paramètres demandés. Lorsque ces informations constituent des données personnelles, l’éditeur s’appuie sur les mesures nécessaires à la fourniture du service demandé (article 6, paragraphe 1, point b), du RGPD). Les publicités facultatives ne sont demandées que si le réglage publicitaire de l’application et les informations de consentement de Google le permettent. Lorsque le consentement constitue la base juridique applicable, il est recueilli par le choix dans l’application et le parcours User Messaging Platform (UMP) de Google (article 6, paragraphe 1, point a), du RGPD et règles ePrivacy applicables). Aucun traitement analytique n’a actuellement lieu.", "Services tiers et communications de données", "Google Mobile Ads (AdMob) : utilisé pour les publicités récompensées facultatives. Chaque demande est configurée pour un traitement destiné aux enfants, soumis à des restrictions d’âge et limité à la classification de contenu Teen (T). L’application déclare les autorisations Android relatives à l’identifiant publicitaire et aux services publicitaires Privacy Sandbox utilisées par le SDK. Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres Android. Selon les politiques de Google, le SDK peut traiter cet identifiant, l’adresse IP, la localisation approximative déduite du réseau, des informations sur l’appareil et l’application, des diagnostics et des données de diffusion ou d’interaction publicitaire. Les demandes dépendent de votre choix dans l’application et de l’autorisation UMP.", "Google User Messaging Platform (UMP) : recueille et applique les informations de consentement publicitaire et présente les options de consentement ou de confidentialité. UMP conserve son propre état de consentement séparément du DataStore de l’application.", "Google Play Billing : gère les achats de produits et les vérifications d’achat. L’application reçoit les informations sur les produits et leur possession pour accorder les avantages du jeu ; Google Play traite les données de paiement.", "L’éditeur ne reçoit ni informations de paiement ni identifiants publicitaires sur un serveur lui appartenant. Les services Google peuvent traiter les données selon leurs propres rôles, politiques et durées de conservation, et les transférer à l’international. Consultez [[googleprivacy]] et [[googleads]]. L’éditeur n’exploite aucun système d’analyse et ne vend aucune donnée provenant d’un serveur qu’il exploite.", "Choix, retrait du consentement et mineurs", "Vous pouvez refuser les publicités et continuer à jouer. Désactivez « Autoriser les publicités récompensées » dans les paramètres pour empêcher toute nouvelle demande. Utilisez « Options de confidentialité publicitaire » pour gérer les choix traités par UMP et Google. Modifier un réglage ne supprime pas les informations déjà traitées par Google. Le retrait du consentement n’affecte pas les traitements antérieurs.", "Le jeu s’adresse aux personnes de 13 ans et plus et ne cible pas les enfants de moins de 13 ans. Il ne collecte ni âge ni date de naissance ; toutes les demandes publicitaires sont soumises à un traitement destiné aux enfants, à des restrictions d’âge et à une limite de contenu Teen (T). Les mineurs devraient examiner les choix publicitaires facultatifs et les formulaires de consentement Google avec un parent ou tuteur. L’éditeur déclare une audience cible de 13 ans et plus et la classification du contenu dans Google Play Console.", "Conservation et suppression", "L’état du jeu, les scores, les paramètres d’accessibilité et les choix de consentement dans l’application sont conservés dans DataStore, dans un stockage privé persistant et non dans le cache. Vider seulement le cache ne les efface pas. Ils sont supprimés via « Supprimer les données locales », l’effacement du stockage ou des données dans Android, ou la désinstallation. Aucune expiration automatique plus courte ne s’applique. Les fichiers DataStore et de préférences partagées gérés par l’application sont exclus de la sauvegarde cloud Android et du transfert entre appareils ; ils ne sont donc pas restaurés après l’effacement des données ou une réinstallation.", "La suppression dans l’application efface son DataStore, y compris les records locaux, les vies, les horodatages publicitaires, les droits mis en cache, le décor choisi et les préférences publicitaires et d’accessibilité. Elle ne réinitialise pas le consentement enregistré séparément par UMP, n’annule pas les achats et ne supprime pas les informations détenues par Google. Les droits d’achat peuvent être récupérés à nouveau auprès de Google Play. L’historique des achats se gère auprès de Google. « Vider le cache » Android ne supprime que les fichiers temporaires, pas les données DataStore. Pour effacer les données de l’application et les données privées des SDK, utilisez « Effacer le stockage » ou « Effacer les données » dans Android, ou désinstallez l’application ; Google peut conserver des informations selon ses règles.", "Vos droits en matière de protection des données", "Si vous résidez dans l’UE/EEE, la loi applicable peut vous donner des droits d’accès, de rectification, d’effacement, de limitation, de portabilité de certaines données, d’opposition et de retrait du consentement. Pour les traitements de l’éditeur, contactez-le aux coordonnées indiquées ci-dessus. Vous pouvez également déposer une plainte auprès de l’autorité de protection des données de votre lieu de résidence, de travail ou du lieu de l’infraction présumée. Pour les données détenues par Google, utilisez ses contrôles de confidentialité et de compte.", "L’éditeur ne possède aucun serveur contenant des profils de jeu ou des comptes. Les données locales peuvent être supprimées avec les commandes décrites ci-dessus. L’éditeur ne peut ni effacer ni modifier les informations détenues indépendamment par Google.", "Sécurité et modifications", "Les données du jeu gérées par l’application sont stockées localement avec Android DataStore et exclues des sauvegardes Android. Aucune méthode de stockage ou de transmission n’est totalement sûre. Cette politique sera mise à jour si les pratiques de traitement, les intégrations ou les obligations d’information changent ; la date d’entrée en vigueur sera également actualisée."], "es": ["Fecha de entrada en vigor: 17/11/2026", "Responsable del tratamiento y contacto", "Space-Arcade-Retro-Shooter, publicado en Google Play con el nombre de desarrollador Sticky Joystick Arcade, es operado por Brici Robert, responsable del tratamiento de los datos personales realizado por la propia aplicación. Para consultas o solicitudes de privacidad, escriba a [[email]]. Actualmente no se ha designado un representante en la UE. Si en el futuro una empresa u otra entidad jurídica publica la aplicación, se actualizará la identidad del responsable antes del lanzamiento.", "Datos tratados por la aplicación", "La aplicación no requiere una cuenta ni dispone de un servidor gestionado por su operador. Guarda la siguiente información en Android DataStore en su dispositivo:", "Estado del juego, incluidas las vidas, la hora de regeneración de vidas, la puntuación máxima y las cinco mejores puntuaciones de sus partidas.", "Indicadores de derechos de compra devueltos por Google Play Billing. La aplicación no almacena datos de tarjetas de pago ni tokens de compra.", "El fondo de juego seleccionado y los derechos sobre fondos devueltos por Google Play y almacenados temporalmente en el dispositivo.", "Su elección opcional sobre anuncios recompensados y sus preferencias de accesibilidad.", "Las marcas de tiempo de finalización de anuncios recompensados, usadas para determinar la elegibilidad en una ventana móvil de 60 minutos, así como el vencimiento de la recompensa temporal y la fecha local en que se reclamó.", "El idioma seleccionado se guarda por separado en preferencias compartidas privadas de la aplicación. Se conserva al utilizar «Eliminar datos locales» o borrar solo la caché. Para restablecerlo, borre el almacenamiento o los datos de la aplicación en Android o desinstálela. Al igual que las demás preferencias compartidas, se excluye de las copias de seguridad y transferencias entre dispositivos de Android.", "El reloj y la zona horaria del dispositivo se consultan localmente para calcular la regeneración y la elegibilidad de recompensas temporales. La aplicación guarda las marcas de tiempo pertinentes de regeneración y finalización de anuncios y la fecha de reclamación, pero no envía la zona horaria a un servidor del operador. Las marcas de tiempo caducadas se eliminan en la siguiente limpieza local periódica. Si la aplicación no se ejecuta, pueden permanecer hasta que vuelva a abrirse o se borren los datos locales.", "No hay ningún SDK de analítica habilitado ni se envían eventos analíticos. La aplicación no solicita ni almacena su fecha de nacimiento o edad, contactos, micrófono, cámara ni ubicación precisa. Los récords personales permanecen en el dispositivo; no hay multijugador ni clasificación global.", "Finalidades y bases jurídicas", "La aplicación utiliza los datos locales del juego y las preferencias para ofrecer el juego y los ajustes solicitados. Cuando sean datos personales, el operador se basa en las medidas necesarias para prestar el servicio solicitado (artículo 6.1.b del RGPD). La publicidad opcional solo se solicita si lo permiten el ajuste publicitario de la aplicación y la información de consentimiento de Google. Cuando el consentimiento sea la base jurídica aplicable, se obtiene mediante la elección en la aplicación y el proceso User Messaging Platform (UMP) de Google (artículo 6.1.a del RGPD y normas ePrivacy aplicables). Actualmente no se realiza tratamiento analítico.", "Servicios de terceros y comunicaciones", "Google Mobile Ads (AdMob): se utiliza para anuncios recompensados opcionales. Todas las solicitudes se configuran con tratamiento dirigido a menores, restricciones de edad y una clasificación máxima de contenido Teen (T). La aplicación declara los permisos de Android para el identificador publicitario y los servicios publicitarios Privacy Sandbox utilizados por el SDK. Puede restablecer o eliminar su identificador publicitario en los ajustes de Android. Según las políticas de Google, el SDK puede tratar el identificador, la dirección IP, la ubicación aproximada inferida de la red, información del dispositivo y la aplicación, diagnósticos y datos de entrega o interacción publicitaria. Las solicitudes dependen de su elección y de la autorización de UMP.", "Google User Messaging Platform (UMP): obtiene y aplica la información de consentimiento publicitario y presenta opciones de consentimiento y privacidad. UMP conserva su propio estado de consentimiento separado del DataStore de la aplicación.", "Google Play Billing: gestiona las compras de productos y las consultas de compras. La aplicación recibe información sobre productos y titularidad para conceder los beneficios del juego; Google Play gestiona los datos de pago.", "El operador no recibe datos de pago ni identificadores publicitarios a través de un servidor propio. Los servicios de Google pueden tratar datos conforme a sus funciones, políticas y plazos de conservación, y transferirlos internacionalmente. Consulte [[googleprivacy]] y [[googleads]]. El operador no realiza analítica ni vende datos desde un servidor propio.", "Opciones, retirada del consentimiento y menores", "Puede rechazar la publicidad y seguir jugando. Desactive «Permitir anuncios recompensados» en Ajustes para detener futuras solicitudes. Utilice «Opciones de privacidad publicitaria» para gestionar las decisiones tratadas por UMP y Google. Cambiar un ajuste no borra información ya tratada por Google. La retirada del consentimiento no afecta al tratamiento anterior.", "El juego está destinado a personas de 13 años o más y no se dirige a menores de 13 años. No recopila edad ni fecha de nacimiento; todas las solicitudes publicitarias reciben tratamiento dirigido a menores, restricciones de edad y un límite de contenido Teen (T). Los menores deben revisar las opciones publicitarias y los formularios de consentimiento de Google con un progenitor o tutor. El editor declara una audiencia objetivo de 13 años o más y la clasificación del contenido en Google Play Console.", "Conservación y eliminación", "El estado del juego, las puntuaciones, los ajustes de accesibilidad y las opciones de consentimiento se conservan en DataStore, en almacenamiento privado persistente, no en la caché. Borrar solo la caché no elimina estos registros. Se borran mediante «Eliminar datos locales», al borrar el almacenamiento o los datos en Android, o al desinstalar la aplicación. No tienen un vencimiento automático más corto. Los archivos DataStore y de preferencias compartidas gestionados por la aplicación están excluidos de las copias de seguridad en la nube y de las transferencias de Android, por lo que no se restauran tras borrar los datos o reinstalar.", "La eliminación desde la aplicación borra su DataStore, incluidos los récords locales, las vidas, las marcas de tiempo publicitarias, los derechos guardados, el fondo seleccionado y las preferencias de publicidad y accesibilidad. No restablece el consentimiento guardado por separado en UMP, cancela compras ni elimina información en poder de Google. Los derechos de compra pueden recuperarse de Google Play al consultar las compras. El historial se gestiona con Google. «Borrar caché» de Android solo elimina archivos de caché, no DataStore. Para borrar los datos de la aplicación y los datos privados de los SDK, use «Borrar almacenamiento» o «Borrar datos» en Android o desinstale la aplicación; Google puede conservar información según sus normas.", "Sus derechos de protección de datos", "Si se encuentra en la UE/EEE, la ley aplicable puede otorgarle derechos de acceso, rectificación, supresión, limitación, portabilidad de determinados datos, oposición y retirada del consentimiento. Para ejercer derechos relativos al tratamiento del operador, utilice el contacto anterior. También puede reclamar ante la autoridad de protección de datos de su lugar de residencia, trabajo o de la presunta infracción. Las solicitudes sobre datos en poder de Google deben dirigirse a Google mediante sus controles de privacidad y cuenta.", "El operador no mantiene ningún servidor con perfiles de juego ni registros de cuentas. Los datos locales pueden eliminarse con las opciones descritas. El operador no puede borrar ni modificar registros mantenidos independientemente por Google.", "Seguridad y cambios", "Los datos del juego gestionados por la aplicación se guardan localmente mediante Android DataStore y se excluyen de las copias de seguridad de Android. Ningún método de almacenamiento o transmisión es completamente seguro. Esta política se actualizará si cambian las prácticas de datos, integraciones u obligaciones de información; también se actualizará la fecha de entrada en vigor."], "pt": ["Data de entrada em vigor: 17/11/2026", "Responsável pelo tratamento e contacto", "O Space-Arcade-Retro-Shooter, publicado no Google Play sob o nome de programador Sticky Joystick Arcade, é operado por Brici Robert, responsável pelo tratamento de dados pessoais realizado pela própria aplicação. Para pedidos ou questões de privacidade, contacte [[email]]. Atualmente não existe representante designado na UE. Se uma empresa ou outra pessoa coletiva publicar a aplicação no futuro, a identidade do responsável será atualizada antes do lançamento.", "Dados tratados pela aplicação", "A aplicação não exige uma conta e não dispõe de um servidor gerido pelo operador. Guarda as seguintes informações no Android DataStore do seu dispositivo:", "Estado do jogo, incluindo vidas, hora de regeneração das vidas, pontuação máxima e as cinco melhores pontuações das suas partidas.", "Indicadores de direitos de compra devolvidos pelo Google Play Billing. A aplicação não guarda dados de cartões de pagamento nem tokens de compra.", "O cenário de jogo selecionado e os direitos relativos a cenários devolvidos pelo Google Play e guardados localmente em cache.", "A sua opção facultativa sobre anúncios com recompensa e as preferências de acessibilidade.", "Os registos temporais de conclusão dos anúncios com recompensa, usados para determinar a elegibilidade numa janela móvel de 60 minutos, bem como o fim da recompensa temporária e a data local em que foi reclamada.", "O idioma escolhido na aplicação é guardado separadamente nas preferências partilhadas privadas da aplicação. Mantém-se após «Eliminar dados locais» ou a limpeza apenas da cache. Para o repor, limpe o armazenamento/dados da aplicação no Android ou desinstale-a. Tal como as outras preferências partilhadas, está excluído das cópias de segurança e transferências entre dispositivos Android.", "O relógio e o fuso horário do dispositivo são consultados localmente para calcular a regeneração e a elegibilidade para recompensas temporárias. A aplicação guarda os registos temporais relevantes da regeneração e conclusão dos anúncios e a data da reclamação, mas não envia o fuso horário para um servidor do operador. Os registos de anúncios expirados são removidos na próxima limpeza local periódica. Se a aplicação não estiver em execução, podem permanecer até voltar a ser iniciada ou até os dados locais serem eliminados.", "Não existe SDK de análise ativo nem são enviados eventos analíticos. A aplicação não solicita nem guarda data de nascimento ou idade, contactos, microfone, câmara ou localização precisa. Os recordes pessoais ficam no dispositivo; não existe modo multijogador nem classificação global.", "Finalidades e fundamentos jurídicos", "A aplicação utiliza os dados locais do jogo e as preferências para fornecer o jogo e as definições solicitadas. Quando estes dados forem pessoais, o operador baseia-se nas diligências necessárias à prestação do serviço solicitado (artigo 6.º, n.º 1, alínea b), do RGPD). A publicidade facultativa só é solicitada quando a definição da aplicação e as informações de consentimento da Google o permitem. Quando o consentimento for o fundamento aplicável, é obtido através da escolha na aplicação e do processo User Messaging Platform (UMP) da Google (artigo 6.º, n.º 1, alínea a), do RGPD e regras ePrivacy aplicáveis). Atualmente não existe tratamento analítico.", "Serviços de terceiros e divulgação de dados", "Google Mobile Ads (AdMob): utilizado para anúncios facultativos com recompensa. Todos os pedidos são configurados com tratamento dirigido a crianças, restrições de idade e classificação máxima de conteúdo Teen (T). A aplicação declara as permissões Android relativas ao identificador de publicidade e aos serviços publicitários Privacy Sandbox utilizados pelo SDK. Pode repor ou eliminar o identificador nas definições Android. Segundo as políticas da Google, o SDK pode tratar esse identificador, endereço IP, localização aproximada inferida da rede, informações do dispositivo e da aplicação, diagnósticos e dados de apresentação ou interação com anúncios. Os pedidos dependem da sua escolha e da autorização da UMP.", "Google User Messaging Platform (UMP): recolhe e aplica informações de consentimento publicitário e apresenta opções de consentimento e privacidade. A UMP guarda o seu estado de consentimento separadamente do DataStore da aplicação.", "Google Play Billing: gere compras de produtos e consultas de compras. A aplicação recebe informações sobre produtos e titularidade para conceder benefícios no jogo; o Google Play trata os dados de pagamento.", "O operador não recebe dados de pagamento nem identificadores de publicidade através de um servidor próprio. Os serviços Google podem tratar dados segundo os seus papéis, políticas e períodos de conservação e transferi-los internacionalmente. Consulte [[googleprivacy]] e [[googleads]]. O operador não realiza análises nem vende dados de um servidor próprio.", "Opções, retirada do consentimento e menores", "Pode recusar publicidade e continuar a jogar. Desative «Permitir anúncios com recompensa» nas Definições para impedir futuros pedidos. Use «Opções de privacidade da publicidade» para gerir as escolhas tratadas pela UMP e Google. Alterar uma definição não apaga dados já tratados pela Google. A retirada do consentimento não afeta o tratamento anterior.", "O jogo destina-se a pessoas com 13 anos ou mais e não é dirigido a crianças com menos de 13 anos. Não recolhe idade nem data de nascimento; todos os pedidos de anúncios recebem tratamento dirigido a crianças, restrições etárias e limite de conteúdo Teen (T). Os menores devem rever as opções de publicidade e os formulários de consentimento Google com um progenitor ou tutor. O editor declara um público-alvo de 13 anos ou mais e a classificação de conteúdo no Google Play Console.", "Conservação e eliminação", "O estado do jogo, pontuações, definições de acessibilidade e opções de consentimento são guardados no DataStore, em armazenamento privado persistente, não na cache. Limpar apenas a cache não os elimina. São eliminados através de «Eliminar dados locais», da limpeza do armazenamento/dados no Android ou da desinstalação. Não existe prazo automático de expiração mais curto. Os ficheiros DataStore e de preferências partilhadas geridos pela aplicação estão excluídos das cópias de segurança na nuvem e transferências entre dispositivos Android, não sendo restaurados após limpeza de dados ou reinstalação.", "A eliminação na aplicação limpa o seu DataStore, incluindo recordes locais, vidas, registos temporais de anúncios, direitos em cache, cenário selecionado e opções de publicidade e acessibilidade. Não repõe o consentimento guardado separadamente pela UMP, não cancela compras nem elimina dados detidos pela Google. Os direitos de compra podem ser novamente obtidos do Google Play quando consultados. O histórico de compras deve ser gerido junto da Google. «Limpar cache» no Android remove apenas ficheiros temporários, não os registos DataStore. Para eliminar dados da aplicação e dados privados dos SDK, use «Limpar armazenamento» ou «Limpar dados» no Android, ou desinstale a aplicação; a Google pode continuar a conservar informações segundo as suas regras.", "Os seus direitos de proteção de dados", "Se estiver na UE/EEE, a lei aplicável pode conferir direitos de acesso, retificação, apagamento, limitação, portabilidade de determinados dados, oposição e retirada do consentimento. Para exercer direitos relativos ao tratamento pelo operador, contacte-o através dos dados acima. Pode ainda apresentar reclamação à autoridade de proteção de dados do local de residência, trabalho ou da alegada infração. Os pedidos relativos a dados detidos pela Google devem ser dirigidos à Google através dos controlos de privacidade e conta.", "O operador não mantém um servidor com perfis de jogo ou registos de contas. Os dados locais podem ser eliminados com os controlos descritos. O operador não pode apagar nem alterar registos detidos de forma independente pela Google.", "Segurança e alterações", "Os dados do jogo geridos pela aplicação são guardados localmente com Android DataStore e excluídos das cópias de segurança Android. Nenhum método de armazenamento ou transmissão é totalmente seguro. Esta política será atualizada se as práticas de dados, integrações ou divulgações aplicáveis mudarem; a data de entrada em vigor também será atualizada."], "de": ["Gültig ab: 17.11.2026", "Verantwortlicher und Kontakt", "Space-Arcade-Retro-Shooter wird bei Google Play unter dem Entwicklernamen Sticky Joystick Arcade veröffentlicht und von Brici Robert betrieben. Er ist der Verantwortliche für die Verarbeitung personenbezogener Daten durch die App selbst. Bei Datenschutzanfragen wenden Sie sich an [[email]]. Derzeit ist kein EU-Vertreter benannt. Sollte künftig ein Unternehmen oder eine andere juristische Person die App veröffentlichen, wird die Identität des Verantwortlichen vor der Veröffentlichung aktualisiert.", "Von der App verarbeitete Daten", "Die App erfordert kein Konto und verfügt über keinen vom Betreiber betriebenen Server. Folgende Informationen werden auf Ihrem Gerät in Android DataStore gespeichert:", "Spielstand einschließlich Leben, Zeitpunkt der Lebensregeneration, Höchstpunktzahl und Ihrer fünf besten Spielrunden.", "Von Google Play Billing übermittelte Kaufberechtigungsmerkmale. Die App speichert weder Zahlungskartendaten noch Kauf-Tokens.", "Der ausgewählte Spielhintergrund sowie lokal zwischengespeicherte Hintergrundberechtigungen von Google Play.", "Ihre freiwillige Entscheidung zu belohnten Werbeanzeigen und Ihre Barrierefreiheitseinstellungen.", "Zeitstempel abgeschlossener belohnter Anzeigen zur Prüfung der Berechtigung innerhalb eines gleitenden 60-Minuten-Zeitraums sowie Ablaufzeitpunkt vorübergehender Belohnungen und das lokale Datum ihrer Einlösung.", "Die gewählte App-Sprache wird separat in privaten Shared Preferences gespeichert. Sie bleibt nach „Lokale Daten löschen“ oder dem bloßen Leeren des Caches erhalten. Zum Zurücksetzen müssen Sie den Android-App-Speicher bzw. die App-Daten löschen oder die App deinstallieren. Wie andere Shared Preferences ist sie von Android-Sicherungen und Geräteübertragungen ausgeschlossen.", "Geräteuhr und Zeitzone werden lokal ausgelesen, um Regeneration und zeitlich begrenzte Belohnungen zu berechnen. Die App speichert die betreffenden Zeitstempel für Regeneration und Anzeigenabschlüsse sowie das Einlösedatum, übermittelt die Zeitzone aber nicht an einen Betreiberserver. Abgelaufene Anzeigenzeitstempel werden bei der nächsten regelmäßigen lokalen Bereinigung entfernt. Wenn die App nicht läuft, können sie bis zum nächsten Start oder zur Löschung lokaler Daten auf dem Gerät verbleiben.", "Es ist kein Analyse-SDK aktiviert und es werden keine Analyseereignisse gesendet. Die App fragt oder speichert weder Geburtsdatum oder Alter noch Kontakte, Mikrofon, Kamera oder genauen Standort. Persönliche Rekorde bleiben auf Ihrem Gerät; es gibt weder Mehrspielermodus noch globale Bestenliste.", "Zwecke und Rechtsgrundlagen", "Die App verwendet lokal gespeicherte Spiel- und Einstellungsdaten, um das gewünschte Spiel und die Einstellungen bereitzustellen. Soweit es sich um personenbezogene Daten handelt, stützt sich der Betreiber auf die zur Bereitstellung des angeforderten Dienstes erforderlichen Schritte (Art. 6 Abs. 1 lit. b DSGVO). Freiwillige Werbung wird nur angefordert, wenn die App-Einstellung und Googles Einwilligungsinformationen dies erlauben. Soweit Einwilligung die maßgebliche Rechtsgrundlage ist, wird sie über die Auswahl in der App und Googles User Messaging Platform (UMP) eingeholt (Art. 6 Abs. 1 lit. a DSGVO und geltende ePrivacy-Vorschriften). Derzeit findet keine Analyseverarbeitung statt.", "Drittanbieter und Datenweitergabe", "Google Mobile Ads (AdMob): wird für freiwillige belohnte Werbung genutzt. Jede Anzeigenanfrage wird für kindergerichtete und altersbeschränkte Behandlung sowie eine maximale Inhaltsbewertung Teen (T) konfiguriert. Die App deklariert die vom SDK genutzten Android-Berechtigungen für Werbe-ID und Privacy-Sandbox-Werbedienste. Sie können Ihre Werbe-ID in den Android-Einstellungen zurücksetzen oder löschen. Nach Googles Richtlinien kann das SDK Werbe-ID, IP-Adresse, aus Netzwerkdaten abgeleiteten ungefähren Standort, Geräte- und App-Informationen, Diagnosedaten sowie Daten zur Anzeigenauslieferung und Interaktion verarbeiten. Anfragen hängen von Ihrer App-Auswahl und der UMP-Freigabe ab.", "Google User Messaging Platform (UMP): erfasst und berücksichtigt Einwilligungsinformationen für Werbung und zeigt Einwilligungs- bzw. Datenschutzoptionen an. UMP speichert seinen Einwilligungsstatus getrennt vom DataStore der App.", "Google Play Billing: verarbeitet Produktkäufe und Kaufabfragen. Die App erhält Produkt- und Besitzinformationen zur Freischaltung von Spielvorteilen; Google Play verarbeitet die Zahlungsdaten.", "Der Betreiber erhält über keinen eigenen Server Zahlungsdaten oder Werbe-IDs. Google-Dienste können Daten nach ihren jeweiligen Rollen, Richtlinien und Aufbewahrungsfristen verarbeiten und international übermitteln. Siehe [[googleprivacy]] und [[googleads]]. Der Betreiber führt keine Analysen durch und verkauft keine Daten von einem eigenen Server.", "Auswahlmöglichkeiten, Widerruf und Kinder", "Sie können Werbung ablehnen und weiterspielen. Deaktivieren Sie „Belohnte Werbung zulassen“ in den Einstellungen, um weitere Anfragen zu stoppen. Unter „Datenschutzoptionen für Werbung“ verwalten Sie die von UMP und Google verarbeiteten Entscheidungen. Eine Einstellungsänderung löscht keine bereits von Google verarbeiteten Daten. Ein Widerruf berührt nicht die Verarbeitung vor dem Widerruf.", "Das Spiel richtet sich an Personen ab 13 Jahren und nicht an Kinder unter 13 Jahren. Es erfasst weder Alter noch Geburtsdatum; alle Anzeigenanfragen werden kindergerichtet, altersbeschränkt und mit der Inhaltsgrenze Teen (T) behandelt. Minderjährige sollten freiwillige Werbeoptionen und Google-Einwilligungsformulare mit Eltern oder Erziehungsberechtigten prüfen. Der Herausgeber gibt in der Google Play Console eine Zielgruppe ab 13 Jahren und die Inhaltsbewertung an.", "Aufbewahrung und Löschung", "Spielstand, Punktzahlen, Barrierefreiheitseinstellungen und Einwilligungsentscheidungen verbleiben im DataStore im dauerhaften privaten App-Speicher und nicht im Cache. Das bloße Leeren des Caches löscht sie nicht. Sie werden durch „Lokale Daten löschen“, das Löschen des Android-App-Speichers bzw. der App-Daten oder die Deinstallation entfernt. Eine kürzere automatische Ablauffrist besteht nicht. Die von der App verwalteten DataStore- und Shared-Preferences-Dateien sind von Android-Cloud-Backups und Geräteübertragungen ausgeschlossen und werden nach Datenlöschung oder Neuinstallation nicht wiederhergestellt.", "Die Löschfunktion in der App entfernt den verwalteten DataStore einschließlich lokaler Rekorde, Leben, Anzeigenzeitstempel, zwischengespeicherter Berechtigungen, des Spielhintergrunds sowie Werbe- und Barrierefreiheitseinstellungen. Sie setzt nicht den separat von UMP gespeicherten Einwilligungsstatus zurück, storniert keine Käufe und löscht keine Daten bei Google. Kaufberechtigungen können bei erneuter Abfrage von Google Play wieder abgerufen werden. Die Kaufhistorie ist über Google zu verwalten. „Cache leeren“ in Android entfernt nur Cachedateien, nicht DataStore-Einträge. Zum Löschen von App-Daten und privaten SDK-Daten verwenden Sie „Speicherinhalt löschen“ oder „Daten löschen“ in Android oder deinstallieren die App; Google kann Informationen gemäß seinen Aufbewahrungsregeln weiter speichern.", "Ihre Datenschutzrechte", "Wenn Sie sich in der EU/im EWR befinden, können Ihnen nach geltendem Recht Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit bestimmter Daten, Widerspruch und Widerruf der Einwilligung zustehen. Für die Verarbeitung durch den Betreiber kontaktieren Sie ihn über die obigen Angaben. Sie können sich auch bei der Datenschutzaufsichtsbehörde Ihres Wohn- oder Arbeitsortes oder des Orts eines mutmaßlichen Verstoßes beschweren. Anfragen zu Daten bei Google sind über dessen Datenschutz- und Kontoeinstellungen an Google zu richten.", "Der Betreiber unterhält keinen Server mit Spielprofilen oder Kontodatensätzen. Lokale Daten lassen sich mit den beschriebenen Funktionen entfernen. Unabhängig von Google gespeicherte Daten kann der Betreiber weder löschen noch ändern.", "Sicherheit und Änderungen", "Von der App verwaltete Spieldaten werden lokal in Android DataStore gespeichert und sind von Android-Sicherungen ausgeschlossen. Keine Speicher- oder Übertragungsmethode ist vollständig sicher. Diese Richtlinie wird bei Änderungen der Datenpraktiken, Integrationen oder geltenden Informationspflichten aktualisiert; auch das Gültigkeitsdatum wird angepasst."]}, "labels": {"en": {"privacy": "Privacy Policy", "terms": "Terms of Service", "by": "by Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Operated by Brici Robert", "language": "Page language", "skip": "Skip to main content", "gp": "Google’s Privacy Policy", "ads": "Google’s advertising information"}, "fr": {"privacy": "Politique de confidentialité", "terms": "Conditions d’utilisation", "by": "par Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Exploité par Brici Robert", "language": "Langue de la page", "skip": "Aller au contenu principal", "gp": "les règles de confidentialité de Google", "ads": "les informations de Google sur la publicité"}, "es": {"privacy": "Política de privacidad", "terms": "Condiciones de servicio", "by": "por Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Operado por Brici Robert", "language": "Idioma de la página", "skip": "Ir al contenido principal", "gp": "la Política de Privacidad de Google", "ads": "la información de Google sobre publicidad"}, "pt": {"privacy": "Política de Privacidade", "terms": "Termos de Serviço", "by": "por Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Operado por Brici Robert", "language": "Idioma da página", "skip": "Ir para o conteúdo principal", "gp": "a Política de Privacidade da Google", "ads": "as informações da Google sobre publicidade"}, "de": {"privacy": "Datenschutzerklärung", "terms": "Nutzungsbedingungen", "by": "von Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Betrieben von Brici Robert", "language": "Seitensprache", "skip": "Zum Hauptinhalt springen", "gp": "Googles Datenschutzerklärung", "ads": "Googles Informationen zu Werbung"}}, "links": {"email": "mailto:robert.brici@outlook.com", "googleprivacy": "https://policies.google.com/privacy", "googleads": "https://www.google.com/policies/technologies/ads/", "privacy": "https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/"}, "kind": "privacy"}</script><script>
+(() => {
+  'use strict';
+  const payload = JSON.parse(document.getElementById('translations').textContent);
+  const nodes = [...document.querySelectorAll('[data-translate-index]')];
+  const select = document.getElementById('language-select');
+  const safe = (s) => String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const render = (value, lang) => safe(value).replace(/\[\[(email|googleprivacy|googleads|privacy)\]\]/g, (_,key) => {
+    const names = {email:'robert.brici@outlook.com',googleprivacy:payload.labels[lang].gp,googleads:payload.labels[lang].ads,privacy:payload.labels[lang].privacy};
+    const external = key==='googleprivacy'||key==='googleads';
+    return '<a href="'+safe(payload.links[key])+'"'+(external?' target="_blank" rel="noopener noreferrer"':'')+'>'+safe(names[key])+'</a>';
+  });
+  function applyLanguage(lang) {
+    if (!Object.hasOwn(payload.content,lang)) lang='en';
+    const l=payload.labels[lang];
+    nodes.forEach((node,i) => {node.innerHTML=lang==='en'?payload.content.en[i]:render(payload.content[lang][i],lang);});
+    document.documentElement.lang=lang;
+    document.title='Space-Arcade-Retro-Shooter — '+l[payload.kind];
+    document.getElementById('page-title').textContent=l[payload.kind];
+    document.getElementById('by-label').textContent=l.by;
+    document.getElementById('footer-operator').textContent=l.operated;
+    document.getElementById('language-label').textContent=l.language;
+    document.getElementById('skip-link').textContent=l.skip;
+    select.value=lang;
+    try {localStorage.setItem('space-arcade-legal-language',lang);} catch(e) {}
+  }
+  select.addEventListener('change', () => applyLanguage(select.value));
+  let initial='en';
+  try { const saved=localStorage.getItem('space-arcade-legal-language'); if (Object.hasOwn(payload.content,saved)) initial=saved; } catch(e) {}
+  applyLanguage(initial);
+})();
+</script></body>
 </html>
